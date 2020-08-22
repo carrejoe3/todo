@@ -1,7 +1,7 @@
 <template>
   <v-container style="max-width: 500px">
     <v-card v-if="tasks.length > 0">
-      <v-slide-y-transition class="py-0" group tag="v-list">
+      <v-slide-y-transition class="py-0" group>
         <template v-for="(task, i) in tasks">
           <v-divider v-if="i !== 0" :key="`${i}-divider`"></v-divider>
 

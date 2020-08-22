@@ -2,6 +2,7 @@
   <div class="home">
     <Toolbar />
     <TodoInput />
+    <InfoBar />
     <List />
   </div>
 </template>
@@ -10,6 +11,7 @@
 
 import Toolbar from '@/components/Toolbar'
 import TodoInput from '@/components/TodoInput'
+import InfoBar from '@/components/InfoBar'
 import List from '@/components/TodoList'
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     Toolbar,
     TodoInput,
+    InfoBar,
     List
   }
 }

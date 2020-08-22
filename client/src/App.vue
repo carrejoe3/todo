@@ -13,3 +13,17 @@ export default {
 }
 
 </script>
+
+<style lang="scss">
+
+body {
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  overflow: hidden;
+}
+
+</style>

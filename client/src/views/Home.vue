@@ -5,7 +5,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 import Toolbar from '@/components/Toolbar'
 
 export default {
@@ -14,4 +14,5 @@ export default {
     Toolbar
   }
 }
+
 </script>

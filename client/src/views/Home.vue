@@ -1,9 +1,11 @@
 <template>
   <div class="home">
     <Toolbar />
-    <TodoInput />
-    <InfoBar />
-    <List />
+    <v-card class="mx-auto mt-15" style="max-width: 500px" flat>
+      <TodoInput />
+      <InfoBar class="mt-10" />
+      <List />
+    </v-card>
   </div>
 </template>
 

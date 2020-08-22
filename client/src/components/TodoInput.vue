@@ -1,9 +1,8 @@
 <template>
-  <v-container style="max-width: 500px" class="mt-15">
+  <v-container>
     <v-text-field
       v-model="task"
       label="What are you working on?"
-      solo
       @keydown.enter="createTodo"
     >
       <template v-slot:append>

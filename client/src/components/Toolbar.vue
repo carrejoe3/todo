@@ -3,7 +3,7 @@
     <Logo />
     <v-spacer></v-spacer>
     <v-toolbar-title id="titleText">
-      Todos: {{ tasks.length }} items
+      Todo: {{ tasks.length }} items
     </v-toolbar-title>
   </v-toolbar>
 </template>

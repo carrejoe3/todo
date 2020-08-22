@@ -27,8 +27,24 @@ export default {
   data: () => ({
     task: null
   }),
+  computed: {
+    tasks: {
+      get () {
+        return this.$store.state.todos.tasks
+      },
+      set (value) {
+        this.$store.commit('setTodosState', { property: 'tasks', value: value })
+      }
+    }
+  },
   methods: {
     createTodo () {
+      this.tasks.push({
+        done: false,
+        title: this.task
+      })
+
+      this.task = null
     }
   }
 }

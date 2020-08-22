@@ -7,12 +7,10 @@
 
           <v-list-item :key="`${i}-${task.text}`">
             <v-list-item-action>
-              <v-checkbox v-model="task.done" :color="task.done && 'grey' || 'primary'">
-                <template v-slot:label>
-                  <div class="ml-4" v-text="task.title"></div>
-                </template>
-              </v-checkbox>
+              <v-checkbox v-model="task.done" :color="task.done && 'grey' || 'primary'"></v-checkbox>
             </v-list-item-action>
+
+            <v-text-field :value="task.title"></v-text-field>
 
             <v-spacer></v-spacer>
 

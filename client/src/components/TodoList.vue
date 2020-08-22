@@ -21,6 +21,13 @@
                 mdi-check
               </v-icon>
             </v-scroll-x-transition>
+            <v-list-item-action>
+              <v-btn icon @click="deleteTask(i)">
+                <v-icon>
+                  mdi-delete
+                </v-icon>
+              </v-btn>
+            </v-list-item-action>
           </v-list-item>
         </template>
       </v-slide-y-transition>
@@ -43,7 +50,9 @@ export default {
     }
   },
   methods: {
-
+    deleteTask (index) {
+      this.tasks.splice(index, 1)
+    }
   }
 }
 

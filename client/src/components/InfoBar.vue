@@ -1,12 +1,12 @@
 <template>
   <v-container class="d-flex" style="max-width: 500px">
-    <strong class="mx-4 third--text text--darken-2">
+    <strong class="mx-4 third--text">
       Remaining: {{ remainingTasks }}
     </strong>
 
     <v-divider vertical></v-divider>
 
-    <strong class="mx-4 primary--text text--darken-2">
+    <strong class="mx-4 primary--text">
       Completed: {{ completedTasks }}
     </strong>
 
